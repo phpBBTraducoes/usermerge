@@ -25,9 +25,9 @@ if (empty($lang) || !is_array($lang))
 // Merge the following language entries into the lang array
 $lang = array_merge($lang, array(
 	'VERSION' 			=> 'Versão',
-	'LOG_USERS_MERGED'	=> '<strong>Usuários mesclados</strong><br />%s',
 	'NO_USER_FOR_MERGE'			=> 'Um usuário especificado para mesclar não pode ser localizado dentro do banco de dados.',
 	'NO_USER_SPECIFIED'			=> 'Um usuário para mesclar não foi especificado.',
+	'CANNOT_MERGE_SAME'			=> 'Você não pode mesclar e deletar o mesmo usuário.',
 	'CANNOT_MERGE_SELF'			=> 'Você está tentando se deletar.',
 	'CANNOT_MERGE_FOUNDER'		=> 'Os fundadores só podem ser deletados por outros fundadores.',
 	'CANNOT_MERGE_SAME'			=> 'Você não pode mesclar a conta do usuário <strong>%s</strong> consigo mesmo',
@@ -42,4 +42,7 @@ $lang = array_merge($lang, array(
 	'OLD_USER_EXPLAIN'			=> 'O antigo usuário que deve ser incorporado. Cuidado, esse usuário será excluído após a mesclagem.',
 	'NEW_USER'					=> 'Novo nome de usuário',
 	'NEW_USER_EXPLAIN'			=> 'O novo usuário ao qual o outro usuário deve ser mesclado. Esse usuário já deve existir.',
+	'MERGE_REGDATE'				=> 'Data de registro da mesclagem',
+	'MERGE_REGDATE_EXPLAIN'		=> 'Selecionando sim aqui substituirá a data de registro dos novos usuários com a data de registro dos usuários anteriores.',
+	'REGDATE'					=> 'Data de registro',
 ));
